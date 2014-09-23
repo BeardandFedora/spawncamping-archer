@@ -1670,7 +1670,7 @@ msgstr ""
 #: ../../framework/functions/global/admin/customizer/register.php:429
 #: ../../framework/functions/global/admin/customizer/register.php:549
 #: ../../framework/functions/global/admin/customizer/register.php:712
-msgid "The Shop"
+msgid "The Store"
 msgstr ""
 
 #: ../../framework/functions/global/breadcrumbs.php:126
@@ -4395,12 +4395,12 @@ msgstr ""
 
 #: ../../framework/functions/global/admin/customizer/register.php:290
 #: ../../framework/functions/global/admin/customizer/register.php:407
-msgid "The Blog"
+msgid "Learning Center"
 msgstr ""
 
 #: ../../framework/functions/global/admin/customizer/register.php:291
 #: ../../framework/functions/global/admin/customizer/register.php:408
-msgid "Blog Title"
+msgid "Article Title"
 msgstr ""
 
 #: ../../framework/functions/global/admin/customizer/register.php:293
@@ -4410,7 +4410,7 @@ msgid ""
 msgstr ""
 
 #: ../../framework/functions/global/admin/customizer/register.php:294
-msgid "Blog Subtitle"
+msgid "Article Subtitle"
 msgstr ""
 
 #: ../../framework/functions/global/admin/customizer/register.php:302
@@ -4422,14 +4422,14 @@ msgid "Enable App Index Sharing"
 msgstr ""
 
 #: ../../framework/functions/global/admin/customizer/register.php:315
-msgid "Enable Shop Header"
+msgid "Enable Store Header"
 msgstr ""
 
 #: ../../framework/functions/global/admin/customizer/register.php:318
 #: ../../framework/functions/global/admin/customizer/register.php:430
 #: ../../framework/functions/global/admin/customizer/register.php:550
 #: ../../framework/functions/global/admin/customizer/register.php:713
-msgid "Shop Title"
+msgid "Store Title"
 msgstr ""
 
 #: ../../framework/functions/global/admin/customizer/register.php:320
@@ -4438,7 +4438,7 @@ msgid ""
 msgstr ""
 
 #: ../../framework/functions/global/admin/customizer/register.php:321
-msgid "Shop Subtitle"
+msgid "Store Subtitle"
 msgstr ""
 
 #: ../../framework/functions/global/admin/customizer/register.php:351
@@ -5116,11 +5116,11 @@ msgid "Activate Subtitle"
 msgstr ""
 
 #: ../../framework/functions/global/admin/customizer/register.php:1235
-msgid "Shop Layout"
+msgid "Store Layout"
 msgstr ""
 
 #: ../../framework/functions/global/admin/customizer/register.php:1238
-msgid "Shop Columns"
+msgid "Store Columns"
 msgstr ""
 
 #: ../../framework/functions/global/admin/customizer/register.php:1249

@@ -44,10 +44,8 @@ function x_customizer_options_register( $wp_customize ) {
   //
 
   $list_stacks = array(
-    'integrity' => __( 'Integrity', '__x__' ),
-    'renew'     => __( 'Renew', '__x__' ),
-    'icon'      => __( 'Icon', '__x__' ),
-    'ethos'     => __( 'Ethos', '__x__' )
+      'integrity' => __( 'AppsFreedom - Integrity', '__x__' ),
+
   );
 
   $list_site_layouts = array(
@@ -178,8 +176,8 @@ function x_customizer_options_register( $wp_customize ) {
   // Sections.
   //
 
-  $x['sec'][] = array( 'x_customizer_section_stack',      __( 'Stack', '__x__' ),      1  );
-  $x['sec'][] = array( 'x_customizer_section_integrity',  __( 'Integrity', '__x__' ),  2  );
+  $x['sec'][] = array( 'x_customizer_section_stack',      __( 'LeanStack', '__x__' ),      1  );
+  $x['sec'][] = array( 'x_customizer_section_integrity',  __( 'AppsFreedom', '__x__' ),  2  );
   $x['sec'][] = array( 'x_customizer_section_renew',      __( 'Renew', '__x__' ),      3  );
   $x['sec'][] = array( 'x_customizer_section_icon',       __( 'Icon', '__x__' ),       4  );
   $x['sec'][] = array( 'x_customizer_section_ethos',      __( 'Ethos', '__x__' ),      5  );
@@ -187,8 +185,8 @@ function x_customizer_options_register( $wp_customize ) {
   $x['sec'][] = array( 'x_customizer_section_buttons',    __( 'Buttons', '__x__' ),    7  );
   $x['sec'][] = array( 'x_customizer_section_header',     __( 'Header', '__x__' ),     8  );
   $x['sec'][] = array( 'x_customizer_section_footer',     __( 'Footer', '__x__' ),     9  );
-  $x['sec'][] = array( 'x_customizer_section_blog',       __( 'Blog', '__x__' ),       10 );
-  $x['sec'][] = array( 'x_customizer_section_portfolio',  __( 'Portfolio', '__x__' ),  11 );
+  $x['sec'][] = array( 'x_customizer_section_blog',       __( 'Learning Center', '__x__' ),       10 );
+  $x['sec'][] = array( 'x_customizer_section_portfolio',  __( 'Apps', '__x__' ),  11 );
   $x['sec'][] = array( 'x_customizer_section_social',     __( 'Social', '__x__' ),     15 );
   $x['sec'][] = array( 'x_customizer_section_site_icons', __( 'Site Icons', '__x__' ), 16 );
   $x['sec'][] = array( 'x_customizer_section_custom',     __( 'Custom', '__x__' ),     17 );
@@ -285,24 +283,24 @@ function x_customizer_options_register( $wp_customize ) {
       //
 
       $x['set'][] = array( 'x_integrity_blog_header_enable', 1, 'refresh' );
-      $x['con'][] = array( 'x_integrity_blog_header_enable', 'checkbox', __( 'Enable Blog Header', '__x__' ), 'x_customizer_section_integrity' );
+      $x['con'][] = array( 'x_integrity_blog_header_enable', 'checkbox', __( 'Enable Learning Center Header', '__x__' ), 'x_customizer_section_integrity' );
 
-      $x['set'][] = array( 'x_integrity_blog_title', __( 'The Blog', '__x__' ), 'postMessage' );
-      $x['con'][] = array( 'x_integrity_blog_title', 'text', __( 'Blog Title', '__x__' ), 'x_customizer_section_integrity' );
+      $x['set'][] = array( 'x_integrity_blog_title', __( 'Learning Center', '__x__' ), 'postMessage' );
+      $x['con'][] = array( 'x_integrity_blog_title', 'text', __( 'Article Title', '__x__' ), 'x_customizer_section_integrity' );
 
       $x['set'][] = array( 'x_integrity_blog_subtitle', __( 'Welcome to our little corner of the Internet. Kick your feet up and stay a while.', '__x__' ), 'postMessage' );
-      $x['con'][] = array( 'x_integrity_blog_subtitle', 'text', __( 'Blog Subtitle', '__x__' ), 'x_customizer_section_integrity' );
+      $x['con'][] = array( 'x_integrity_blog_subtitle', 'text', __( 'Article Subtitle', '__x__' ), 'x_customizer_section_integrity' );
 
 
       //
       // Portfolio options.
       //
 
-      $x['set'][] = array( 'x_integrity_portfolio_archive_sort_button_text', __( 'Sort Portfolio', '__x__' ), 'postMessage' );
+      $x['set'][] = array( 'x_integrity_portfolio_archive_sort_button_text', __( 'Sort Apps', '__x__' ), 'postMessage' );
       $x['con'][] = array( 'x_integrity_portfolio_archive_sort_button_text', 'text', __( 'Sort Button Text', '__x__' ), 'x_customizer_section_integrity' );
 
       $x['set'][] = array( 'x_integrity_portfolio_archive_post_sharing_enable', 0, 'refresh' );
-      $x['con'][] = array( 'x_integrity_portfolio_archive_post_sharing_enable', 'checkbox', __( 'Enable Portfolio Index Sharing', '__x__' ), 'x_customizer_section_integrity' );
+      $x['con'][] = array( 'x_integrity_portfolio_archive_post_sharing_enable', 'checkbox', __( 'Enable App Index Sharing', '__x__' ), 'x_customizer_section_integrity' );
 
 
       //
@@ -312,9 +310,9 @@ function x_customizer_options_register( $wp_customize ) {
       if ( X_WOOCOMMERCE_IS_ACTIVE ) {
 
           $x['set'][] = array( 'x_integrity_shop_header_enable', 1, 'refresh' );
-          $x['con'][] = array( 'x_integrity_shop_header_enable', 'checkbox', __( 'Enable Shop Header', '__x__' ), 'x_customizer_section_integrity' );
+          $x['con'][] = array( 'x_integrity_shop_header_enable', 'checkbox', __( 'Enable Store Header', '__x__' ), 'x_customizer_section_integrity' );
 
-          $x['set'][] = array( 'x_integrity_shop_title', __( 'The Shop', '__x__' ), 'postMessage' );
+          $x['set'][] = array( 'x_integrity_shop_title', __( 'The Store', '__x__' ), 'postMessage' );
           $x['con'][] = array( 'x_integrity_shop_title', 'text', __( 'Shop Title', '__x__' ), 'x_customizer_section_integrity' );
 
           $x['set'][] = array( 'x_integrity_shop_subtitle', __( 'Welcome to our online store. Take some time to browse through our items.', '__x__' ), 'postMessage' );
@@ -404,8 +402,8 @@ function x_customizer_options_register( $wp_customize ) {
       // Blog options.
       //
 
-      $x['set'][] = array( 'x_renew_blog_title', __( 'The Blog', '__x__' ), 'postMessage' );
-      $x['con'][] = array( 'x_renew_blog_title', 'text', __( 'Blog Title', '__x__' ), 'x_customizer_section_renew' );
+      $x['set'][] = array( 'x_renew_blog_title', __( 'Learning Center', '__x__' ), 'postMessage' );
+      $x['con'][] = array( 'x_renew_blog_title', 'text', __( 'Article Title', '__x__' ), 'x_customizer_section_renew' );
 
       $x['set'][] = array( 'x_renew_entry_icon_color', '#dddddd', 'refresh' );
       $x['con'][] = array( 'x_renew_entry_icon_color', 'color', __( 'Entry Icons', '__x__' ), 'x_customizer_section_renew' );
@@ -426,8 +424,8 @@ function x_customizer_options_register( $wp_customize ) {
 
       if ( X_WOOCOMMERCE_IS_ACTIVE ) {
 
-          $x['set'][] = array( 'x_renew_shop_title', __( 'The Shop', '__x__' ), 'postMessage' );
-          $x['con'][] = array( 'x_renew_shop_title', 'text', __( 'Shop Title', '__x__' ), 'x_customizer_section_renew' );
+          $x['set'][] = array( 'x_renew_shop_title', __( 'The Store', '__x__' ), 'postMessage' );
+          $x['con'][] = array( 'x_renew_shop_title', 'text', __( 'Store Title', '__x__' ), 'x_customizer_section_renew' );
 
       }
 
@@ -546,8 +544,8 @@ function x_customizer_options_register( $wp_customize ) {
 
       if ( X_WOOCOMMERCE_IS_ACTIVE ) {
 
-          $x['set'][] = array( 'x_icon_shop_title', __( 'The Shop', '__x__' ), 'postMessage' );
-          $x['con'][] = array( 'x_icon_shop_title', 'text', __( 'Shop Title', '__x__' ), 'x_customizer_section_icon' );
+          $x['set'][] = array( 'x_icon_shop_title', __( 'The Store', '__x__' ), 'postMessage' );
+          $x['con'][] = array( 'x_icon_shop_title', 'text', __( 'Shop Store', '__x__' ), 'x_customizer_section_icon' );
 
       }
 
@@ -709,8 +707,8 @@ function x_customizer_options_register( $wp_customize ) {
 
       if ( X_WOOCOMMERCE_IS_ACTIVE ) {
 
-          $x['set'][] = array( 'x_ethos_shop_title', __( 'The Shop', '__x__' ), 'postMessage' );
-          $x['con'][] = array( 'x_ethos_shop_title', 'text', __( 'Shop Title', '__x__' ), 'x_customizer_section_ethos' );
+          $x['set'][] = array( 'x_ethos_shop_title', __( 'The Store', '__x__' ), 'postMessage' );
+          $x['con'][] = array( 'x_ethos_shop_title', 'text', __( 'Store Title', '__x__' ), 'x_customizer_section_ethos' );
 
       }
 
@@ -933,7 +931,7 @@ function x_customizer_options_register( $wp_customize ) {
       //
 
       $x['set'][] = array( 'x_logo', NULL, 'refresh' );
-      $x['con'][] = array( 'x_logo', 'image', __( 'Upload Your Logo', '__x__' ), 'x_customizer_section_header' );
+      $x['con'][] = array( 'x_logo', 'image', __( 'Upload The Logo', '__x__' ), 'x_customizer_section_header' );
 
       $x['set'][] = array( 'x_logo_width', '', 'refresh' );
       $x['con'][] = array( 'x_logo_width', 'text', __( 'Logo Width (px)', '__x__' ), 'x_customizer_section_header' );
@@ -1100,17 +1098,17 @@ function x_customizer_options_register( $wp_customize ) {
       // Labels.
       //
 
-      $x['set'][] = array( 'x_portfolio_tag_title', __( 'Skills', '__x__' ), 'refresh' );
+      $x['set'][] = array( 'x_portfolio_tag_title', __( 'Tags', '__x__' ), 'refresh' );
       $x['con'][] = array( 'x_portfolio_tag_title', 'text', __( 'Tag List Title', '__x__' ), 'x_customizer_section_portfolio' );
 
-      $x['set'][] = array( 'x_portfolio_launch_project_title', __( 'Launch Project', '__x__' ), 'refresh' );
-      $x['con'][] = array( 'x_portfolio_launch_project_title', 'text', __( 'Launch Project Title', '__x__' ), 'x_customizer_section_portfolio' );
+      $x['set'][] = array( 'x_portfolio_launch_project_title', __( 'Launch App', '__x__' ), 'refresh' );
+      $x['con'][] = array( 'x_portfolio_launch_project_title', 'text', __( 'Launch App Title', '__x__' ), 'x_customizer_section_portfolio' );
 
-      $x['set'][] = array( 'x_portfolio_launch_project_button_text', __( 'See it Live!', '__x__' ), 'refresh' );
-      $x['con'][] = array( 'x_portfolio_launch_project_button_text', 'text', __( 'Launch Project Button Text', '__x__' ), 'x_customizer_section_portfolio' );
+      $x['set'][] = array( 'x_portfolio_launch_project_button_text', __( 'See it Live', '__x__' ), 'refresh' );
+      $x['con'][] = array( 'x_portfolio_launch_project_button_text', 'text', __( 'Launch App Button Text', '__x__' ), 'x_customizer_section_portfolio' );
 
-      $x['set'][] = array( 'x_portfolio_share_project_title', __( 'Share this Project', '__x__' ), 'refresh' );
-      $x['con'][] = array( 'x_portfolio_share_project_title', 'text', __( 'Share Project Title', '__x__' ), 'x_customizer_section_portfolio' );
+      $x['set'][] = array( 'x_portfolio_share_project_title', __( 'Share this App', '__x__' ), 'refresh' );
+      $x['con'][] = array( 'x_portfolio_share_project_title', 'text', __( 'Share App Title', '__x__' ), 'x_customizer_section_portfolio' );
 
 
       //
@@ -1210,16 +1208,16 @@ function x_customizer_options_register( $wp_customize ) {
       $x['set'][] = array( 'x_buddypress_groups_subtitle', __( 'Find others with similar interests and get plugged in.', '__x__' ), 'refresh' );
       $x['con'][] = array( 'x_buddypress_groups_subtitle', 'text', __( 'Groups Subtitle', '__x__' ), 'x_customizer_section_buddypress' );
 
-      $x['set'][] = array( 'x_buddypress_blogs_subtitle', __( 'See what others are writing about. Learn something new and exciting today!', '__x__' ), 'refresh' );
+      $x['set'][] = array( 'x_buddypress_blogs_subtitle', __( 'See what others are writing about. Learn something new and exciting today.', '__x__' ), 'refresh' );
       $x['con'][] = array( 'x_buddypress_blogs_subtitle', 'text', __( 'Sites Subtitle', '__x__' ), 'x_customizer_section_buddypress' );
 
       $x['set'][] = array( 'x_buddypress_members_subtitle', __( 'Meet your new online community. Kick up your feet and stay awhile.', '__x__' ), 'refresh' );
       $x['con'][] = array( 'x_buddypress_members_subtitle', 'text', __( 'Members Subtitle', '__x__' ), 'x_customizer_section_buddypress' );
 
-      $x['set'][] = array( 'x_buddypress_register_subtitle', __( 'Just fill in the fields below and we\'ll get a new account set up for you in no time!', '__x__' ), 'refresh' );
+      $x['set'][] = array( 'x_buddypress_register_subtitle', __( 'Just fill in the fields below and we\'ll get a new account set up for you in no time.', '__x__' ), 'refresh' );
       $x['con'][] = array( 'x_buddypress_register_subtitle', 'text', __( 'Register Subtitle', '__x__' ), 'x_customizer_section_buddypress' );
 
-      $x['set'][] = array( 'x_buddypress_activate_subtitle', __( 'You\'re almost there! Simply enter your activation code below and we\'ll take care of the rest.', '__x__' ), 'refresh' );
+      $x['set'][] = array( 'x_buddypress_activate_subtitle', __( 'You\'re almost there. Simply enter your activation code below and we\'ll take care of the rest.', '__x__' ), 'refresh' );
       $x['con'][] = array( 'x_buddypress_activate_subtitle', 'text', __( 'Activate Subtitle', '__x__' ), 'x_customizer_section_buddypress' );
 
   }
@@ -1232,10 +1230,10 @@ function x_customizer_options_register( $wp_customize ) {
   if ( X_WOOCOMMERCE_IS_ACTIVE ) {
 
       $x['set'][] = array( 'x_woocommerce_shop_layout_content', 'sidebar', 'refresh' );
-      $x['con'][] = array( 'x_woocommerce_shop_layout_content', 'radio', __( 'Shop Layout', '__x__' ), $list_section_layouts, 'x_customizer_section_woocommerce' );
+      $x['con'][] = array( 'x_woocommerce_shop_layout_content', 'radio', __( 'Store Layout', '__x__' ), $list_section_layouts, 'x_customizer_section_woocommerce' );
 
       $x['set'][] = array( 'x_woocommerce_shop_columns', '3', 'refresh' );
-      $x['con'][] = array( 'x_woocommerce_shop_columns', 'radio', __( 'Shop Columns', '__x__' ), $list_shop_columns, 'x_customizer_section_woocommerce' );
+      $x['con'][] = array( 'x_woocommerce_shop_columns', 'radio', __( 'Store Columns', '__x__' ), $list_shop_columns, 'x_customizer_section_woocommerce' );
 
       $x['set'][] = array( 'x_woocommerce_shop_count', '12', 'refresh' );
       $x['con'][] = array( 'x_woocommerce_shop_count', 'text', __( 'Posts Per Page', '__x__' ), 'x_customizer_section_woocommerce' );

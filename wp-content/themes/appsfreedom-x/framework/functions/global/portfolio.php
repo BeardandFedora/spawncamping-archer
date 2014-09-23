@@ -150,7 +150,7 @@ function x_portfolio_filters() {
   //
 
   if ( $stack == 'integrity' ) {
-    $button_content = '<i class="x-icon-sort"></i> <span>' . x_get_option( 'x_integrity_portfolio_archive_sort_button_text', __( 'Sort Portfolio', '__x__' ) ) . '</span>';
+    $button_content = '<i class="x-icon-sort"></i> <span>' . x_get_option( 'x_integrity_portfolio_archive_sort_button_text', __( 'Sort Apps', '__x__' ) ) . '</span>';
   } elseif ( $stack == 'ethos' ) {
     $button_content = '<i class="x-icon-chevron-down"></i>';
   } else {

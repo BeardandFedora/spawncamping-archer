@@ -16,11 +16,11 @@
 .x-colophon {
   position: relative;
   border-top: 1px solid $colophonFirstBorder;
-  background-color: $baseModBackground;
+  background-color: $baseColBackground;
   @include box-shadow(#{$colophonFirstBoxShadow});
 
   + .x-colophon {
-    border-top: 1px solid darken($baseModBackground, 12%);
+    border-top: 1px solid darken($baseColBackground, 12%);
     border-top: 1px solid $colophonBorderTopRgba;
     @include box-shadow(#{$colophonBoxShadow});
   }

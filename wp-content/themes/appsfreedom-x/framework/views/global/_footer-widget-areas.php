@@ -13,6 +13,11 @@ $n = x_footer_widget_areas_count();
 <?php if ( $n != 0 ) : ?>
 
   <footer class="x-colophon top" role="contentinfo">
+      <div class="footer-logo">
+		<a href="/" class="btn btn-link btn-xs">
+			<img src="/wp-content/uploads/logo-footer-big.png">
+		</a>
+	</div>
     <div class="x-container-fluid max width">
       <div class="x-row-fluid">
 
