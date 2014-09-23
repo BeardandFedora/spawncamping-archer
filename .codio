@@ -1,0 +1,17 @@
+{
+// Configure your Run and Preview buttons here.
+
+// Run button configuration
+ 
+
+// Preview button configuration
+  "preview": {
+        "HTTPS PHPMyAdmin": "https://{{domain}}:9500/phpmyadmin",
+        "PHPMyAdmin": "https://{{domain}}:3000/phpmyadmin",
+        "Project Index (static)": "https://{{domain}}/{{index}}",
+        "Current File (static)": "https://{{domain}}/{{filepath}}",
+        "Box URL": "http://{{domain}}:3000/",
+        "Box URL SSL": "https://{{domain}}:9500/"
+  }
+}
+
