@@ -1,2 +1,6 @@
-# do not for ny reason let this file be committed
+# do not for ny reason let these files be committed
 .box-settings
+wp-config.php
+.codio
+.htaccess
+startup.sh
