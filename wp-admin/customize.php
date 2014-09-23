@@ -154,7 +154,7 @@ do_action( 'customize_controls_print_scripts' );
 							<div class="theme-description"><?php echo $wp_customize->theme()->display('Description'); ?></div>
 						<?php endif;
 					else:
-						echo __( 'The Customizer allows you to preview changes to your site before publishing them. You can also navigate to different pages on your site to preview them.' );
+						echo __( 'The Customizer allows you to preview changes to the site before publishing them. You can also navigate to different pages on the site to preview them.' );
 					endif; ?>
 				</div>
 				<?php endif; ?>
