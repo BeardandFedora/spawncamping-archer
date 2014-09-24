@@ -1015,7 +1015,7 @@ function x_customizer_options_register( $wp_customize ) {
       $x['set'][] = array( 'x_footer_content_display', 1, 'refresh' );
       $x['con'][] = array( 'x_footer_content_display', 'checkbox', __( 'Enable Footer Content', '__x__' ), 'x_customizer_section_footer' );
 
-      $x['set'][] = array( 'x_footer_content', '<p style="letter-spacing: 2px; text-transform: uppercase; opacity: 0.5; filter: alpha(opacity=50);">Proudly Powered By <br><a href="http://lean-labs.com/themestack/" title="LeanStack WordPress Theme Roller">LeanStack</a></p>', 'refresh' );
+      $x['set'][] = array( 'x_footer_content', '<p style="letter-spacing: 2px; text-transform: uppercase; opacity: 0.5; filter: alpha(opacity=50);">Proudly Powered By <br><a href="http://lean-labs.com/leanstack/" title="LeanStack">LeanStack</a></p>', 'refresh' );
       $x['con'][] = array( 'x_footer_content', 'textarea', __( 'Footer Content', '__x__' ), 'x_customizer_section_footer' );
 
 

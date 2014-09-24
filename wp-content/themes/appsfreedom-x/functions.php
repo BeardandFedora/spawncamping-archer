@@ -49,6 +49,17 @@ require_once( $admn_path . '/widgets.php' );
 require_once( $admn_path . '/custom-post-types.php' );
 require_once( $admn_path . '/customizer/setup.php' );
 
+/**
+ * If we're using Kirki, load it
+ */
+if ( ! class_exists( 'Kirki' ) ) {
+        require_once( $admn_path . '/kirki/kirki.php' );
+}
+require_once( $admn_path . '/customizer/customizer.php' );
+
+/**
+ * If we're using Visual Composer, load it
+ */
 if ( X_VISUAL_COMOPSER_IS_ACTIVE ) {
   require_once( $admn_path . '/visual-composer.php' );
 }
