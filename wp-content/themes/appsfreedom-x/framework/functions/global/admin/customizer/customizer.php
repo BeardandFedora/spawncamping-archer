@@ -9,12 +9,13 @@ function leanstack_customizer_config() {
 	$args = array(
 
 		// 'logo_image'    => get_template_directory_uri() . '/assets/images/customizer-logo.png',
-		'logo_image'    => get_template_directory_uri() . '/favicon.png',
+		'logo_image'    => '/favicon.png',
 		'color_active'  => '#c1e2f1',
-		'color_light'   => '#c1e2f1',
-		'color_select'  => '#17649a',
-		'color_accent'  => '#E74C3C',
-		'color_back'    => '#ffffff',
+		//'color_light'   => '#c1e2f1',
+		//'color_select'  => '#17649a',
+		//'color_accent'  => '#E74C3C',
+		'color_back'    => '#17649a',
+        'color_title'    => '#ffffff',
 		'url_path'      => $admn_path . '/kirki/',
 		'stylesheet_id' => 'leanstack',
 		// 'live_css'      => false,
