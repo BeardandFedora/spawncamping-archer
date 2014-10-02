@@ -18,7 +18,6 @@
           <li><a href="/tour">Platform</a></li>
           <li><a href="/apps">Apps</a></li>
           <li><a href="/learn">Learning Center</a></li>
-            <li><a href="/learn/blog">Blog</a></li>
           <li><a type="button" class="btn primary-button" href="/testdrive">Get Started <span class="btn-arrow"></span></a></li>
         </ul>
       </div>
