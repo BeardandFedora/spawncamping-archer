@@ -2,5 +2,7 @@
 .box-settings
 wp-config.php
 .codio
-.htaccess
+#.htaccess
 startup.sh
+.DS_Store
+appsfreedom-production.tar.gz
