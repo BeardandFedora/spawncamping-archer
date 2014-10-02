@@ -43,6 +43,7 @@
 						<dd><a href="/tour">Platform Tour</a></dd>
 						<dd><a href="/apps">App Library</a></dd>
 						<dd><a href="/testdrive">Test Drive</a></dd>
+						<dd><a href="/softwarevendors">Software Vendors</a></dd>
 					</dl>
 					<!-- <dl>
 						<dt>Resources</dt>
