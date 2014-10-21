@@ -1,19 +1,11 @@
 
 # BEGIN Custom Routing
-<IfModule mod_rewrite.c>
+
 RewriteEngine On
-RewriteBase /learn
-RewriteRule ^index\.php$ - [L]
+RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*)$ http://madrid-finish.codio.io:3000/$1/ [L,R=301]
 
-# Custom Rewrite for html/php static pages - tmp until release 2
-RewriteCond %{REQUEST_URI} !^/apps/.*$ [NC]
-RewriteCond %{REQUEST_URI} !^/tour/.*$ [NC]
-RewriteCond %{REQUEST_URI} !^/testdrive.*$ [NC]
-RewriteCond %{REQUEST_URI} !^/.*$ [NC]
-
-RewriteRule . /index.php [L]
-</IfModule>
 
 # END Custom Routing

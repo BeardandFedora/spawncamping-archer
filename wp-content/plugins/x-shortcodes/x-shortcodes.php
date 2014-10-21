@@ -1,0 +1,63 @@
+<?php
+
+/*
+
+Plugin Name: LeanStack X &ndash; Shortcodes
+Description: Includes all shortcode functionality for LeanStack X.
+Version: 2.4.0
+Author: LeanStack
+Text Domain: __x__
+X Plugin: x-shortcodes
+
+*/
+
+// =============================================================================
+// TABLE OF CONTENTS
+// -----------------------------------------------------------------------------
+//   01. Define Constants
+//   02. Initialize the Plugin and Require Files
+// =============================================================================
+
+// Define Constants
+// =============================================================================
+
+define( 'X_SHORTCODES_VERSION', '2.4.0' );
+define( 'X_SHORTCODES_URL', plugins_url( '', __FILE__ ) );
+
+
+
+// Initialize the Plugin and Require Files
+// =============================================================================
+
+function x_shortcodes_init() {
+
+  //
+  // Load plugin textdomain.
+  //
+
+  load_plugin_textdomain( '__x__', false, dirname( plugin_basename( __FILE__ ) ) . '/lang/' );
+
+
+  //
+  // Include frontend functionality.
+  //
+
+  require_once( 'functions/version-output.php' );
+  require_once( 'functions/get-option.php' );
+  require_once( 'functions/has-shortcode.php' );
+  require_once( 'functions/shortcodes.php' );
+
+
+  //
+  // Enqueue styles and scripts.
+  //
+
+  require_once( 'functions/enqueue/styles.php' );
+  require_once( 'functions/enqueue/scripts.php' );
+
+}
+
+add_action( 'init', 'x_shortcodes_init' );
+
+require_once( 'functions/admin/user.php' );
+require_once( 'functions/admin/shortcode-generator.php' );
