@@ -1,3 +1,5 @@
+jQuery(document).ready(function($) {
+
 if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
 	$('body').addClass('safari');
 }
@@ -19,3 +21,5 @@ if (navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IE
 	$('.bg-video video').remove();
 	$('.bg-video').append(fallback);
 }
+    
+});

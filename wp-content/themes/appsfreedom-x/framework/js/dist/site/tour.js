@@ -1,3 +1,7 @@
+jQuery(document).ready(function($) {
+
+$('body').scrollspy({ target: '#tour-scrollby' });
+
 var $nav = $('#tour-scrollby'),
 nav_position = $nav.position().top - $nav.height(),
 $navLinks = $nav.find('a');
@@ -15,6 +19,7 @@ function scrollByNavCheck() {
 	if ($nav.is(':visible')) {
 		var win_position = getPosition($(this)).scroll;
 		win_position > nav_position ? fixedScrollby($nav) : staticScrollby($nav);	
+        var $spy = $(this).scrollspy('refresh');
 	}	
 }
 
@@ -39,6 +44,8 @@ function staticScrollby(nav) {
 	nav.next().css('padding-top', '0');
 }
 
+       
+    
 (function($){
 	var $carousel = $('.carousel'),
 	$slidersContainers = $carousel.find('.carousel-indicators-outer'),
@@ -94,3 +101,4 @@ function moveSliderNav($btn, $slider) {
 }
 
 
+});
