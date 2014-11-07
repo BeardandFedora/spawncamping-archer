@@ -387,7 +387,7 @@ class WPBakeryVisualComposerLayout implements  WPBakeryVisualComposerTemplateInt
         $output .= '
         <div class="metabox-composer-content">
 					<div id="wpb-convert-message">
-					   <div class="messagebox_text"><p>'.__('The layout you are trying to use on this page does not conform to Visual Composer\'s layout guidelines. For more information on this situation and how to avoid this error going forward, please see our <a href="http://theme.co/x/member/kb/solutions-to-potential-setup-issues-visual-composer/" target="_blank">Knowledge Base article</a> in the X Member Area.', "js_composer").'</p>
+					   <div class="messagebox_text"><p>'.__('The layout you are trying to use on this page does not conform to the LeanStack Visual Composer&#39;s layout guidelines. For serious help with help with issue, email us at <a href="mailto:leanstack@lean-labs.com">leanstack@lean-labs.com</a>.', "js_composer").'</p>
 					 </div>
 				</div>
 				
