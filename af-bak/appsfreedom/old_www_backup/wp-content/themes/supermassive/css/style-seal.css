@@ -1,0 +1,83 @@
+/*************************** General Styling ***************************/
+
+/* Page Styling */
+body {
+background: #eff0f2 url(../images/page-bg-seal.png) repeat-x;
+}
+
+/* Text Styling */
+a,
+#nav ul li > a:hover,
+#nav ul .current-menu-item > a,
+#nav ul .current-menu-ancestor > a,
+#nav .sub-menu a:hover,
+#nav .sub-menu .li-first a:hover,
+#nav .current-menu-item .sub-menu a:hover,
+#nav .current-menu-ancestor .sub-menu a:hover {
+color: #486573;
+}
+a:hover,
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+color: #4a819b;
+}
+
+
+.recentcomments,
+.slider-button,
+.slide-prev,
+.slide-next,
+h3.accordion-title,
+h3.toggle,
+h3.comments {
+background-image: url(../images/sprite-arcticfox.png);
+}
+
+ul li {
+background-image: url(../images/bg-li.png);
+background-repeat:no-repeat;
+background-position:center left;
+padding-left: 25px;
+}
+
+
+/*************************** Gradients ***************************/
+
+input[type="submit"],
+input[type="reset"],
+.wp-pagenavi .current,
+.wp-pagenavi .page:hover,
+.wp-pagenavi.post-navi span,
+.wp-pagenavi.post-navi a span:hover {
+border: 1px solid #87999d;
+background-color: #cbd4d6;
+background-image: -moz-linear-gradient(top, #cbd4d6, #87999d);
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#cbd4d6), to(#87999d));
+filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#cbd4d6, endColorstr=#87999d);
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#cbd4d6, endColorstr=#87999d)";
+color: #fff;
+}
+
+
+/*************************** Content Areas ***************************/
+
+
+
+/*************************** Page/Post Styling ***************************/
+
+/* Breadcrumbs */
+#breadcrumbs, #breadcrumbs a {
+color: #003f7e;
+}
+
+
+/*************************** Footer ***************************/
+
+/* Footer Bottom */
+#footer-bottom-outer {
+background: url(../images/footer-bottom-seal.png) repeat-x;
+}

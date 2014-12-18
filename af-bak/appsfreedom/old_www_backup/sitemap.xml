@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://www.appsfreedom.com/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.5.2" -->
+<!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.9" -->
+<!-- generated-on="September 2, 2014 10:28 pm" -->
+<!-- Debug: Total comment count: 0 -->
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
+		<loc>http://www.appsfreedom.com/</loc>
+		<lastmod>2014-05-06T04:02:08+00:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+<!-- Debug: Start Postings -->
+<!-- Debug: Priority report of postID 3901: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/appsfreedom-to-showcase-its-latest-award-winning-product-at-sap-sapphirenow-asug-2014-annual-conference</loc>
+		<lastmod>2014-05-30T15:44:53+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/sapphire2014</loc>
+		<lastmod>2014-05-22T22:20:38+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/request-a-demo</loc>
+		<lastmod>2014-05-22T20:05:14+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 3877: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/appsfreedom-selected-as-a-red-herring-top-100-north-america-winner</loc>
+		<lastmod>2014-05-21T18:57:03+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3872: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/appsfreedom-named-a-finalist-for-the-2014-red-herring-top-100-north-america-award</loc>
+		<lastmod>2014-05-21T18:51:16+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/home-dev</loc>
+		<lastmod>2014-05-16T01:43:21+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/about/management</loc>
+		<lastmod>2014-05-06T04:33:19+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/thefreedomplatform</loc>
+		<lastmod>2014-05-06T04:31:14+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/apps</loc>
+		<lastmod>2014-05-06T02:54:49+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 3833: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/appsfreedom-to-showcase-its-latest-award-winning-product-at-crm-2014</loc>
+		<lastmod>2014-03-25T16:47:09+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3571: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/breaking-the-sap-api-barrier</loc>
+		<lastmod>2014-01-23T18:00:40+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3768: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/mobile-expert-interview-vaidy-iyer-on-cloud-mobility-and-paas</loc>
+		<lastmod>2014-01-13T18:53:23+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/resources/training-and-support</loc>
+		<lastmod>2014-01-09T23:27:55+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 3751: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/appsfreedoms-enterprise-mobility-solution-and-founderceo-named-best-of-2013-in-the-mobile-star-awards</loc>
+		<lastmod>2014-01-08T16:27:22+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3349: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/appsfreedom-to-showcase-its-latest-award-winning-solution-at-enterprise-mobility-2013</loc>
+		<lastmod>2013-12-16T16:40:28+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/appdevelopmentlifecycle</loc>
+		<lastmod>2013-12-16T16:34:43+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/apps/sales</loc>
+		<lastmod>2013-12-12T20:31:15+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/about</loc>
+		<lastmod>2013-12-12T20:11:59+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 3665: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/appsfreedom-launches-freedom-platform-industrys-first-and-only-multi-channel-multi-device-platform-as-a-service-for-sap</loc>
+		<lastmod>2013-12-12T18:33:38+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/mobile-home</loc>
+		<lastmod>2013-12-11T23:25:06+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 3680: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/sapphire-now-asug-annual-conference</loc>
+		<lastmod>2013-12-11T23:10:18+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3304: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/crm-2014</loc>
+		<lastmod>2013-12-11T22:26:39+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2620: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/enterprise-mobility-2013</loc>
+		<lastmod>2013-12-11T22:05:23+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/resources</loc>
+		<lastmod>2013-12-06T22:04:54+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/solutions/success-stories</loc>
+		<lastmod>2013-12-06T19:43:56+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/resources/data-sheets</loc>
+		<lastmod>2013-12-06T19:41:02+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/resources/case-studies</loc>
+		<lastmod>2013-12-06T19:40:33+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 3403: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/are-the-challenges-of-enterprise-mobile-user-adoption-insurmountable-we-say-no-part-3</loc>
+		<lastmod>2013-11-21T16:07:50+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/news-and-events</loc>
+		<lastmod>2013-11-12T01:19:29+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 2660: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/americas-sap-users-group-asug</loc>
+		<lastmod>2013-11-11T23:17:49+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3285: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/are-the-challenges-of-enterprise-mobile-user-adoption-insurmountable-we-say-no-part-2</loc>
+		<lastmod>2013-11-11T22:02:52+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3277: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/are-the-challenges-of-enterprise-mobile-user-adoption-insurmountable-we-say-no</loc>
+		<lastmod>2013-10-29T21:01:49+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3269: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/develop-and-deploy-mobile-apps-that-create-a-better-customer-experience</loc>
+		<lastmod>2013-10-16T18:25:50+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 936: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/seal-innotech-named-software-solution-newcomer-of-the-year-finalist-in-2011-sap-pinnacle-awards</loc>
+		<lastmod>2013-10-03T21:44:51+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1802: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/appsfreedom-announces-ready-to-use-pre-integrated-mobile-app-bundles-for-key-business-functions</loc>
+		<lastmod>2013-10-03T21:43:57+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2058: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/barton-malow-signs-new-agreement-with-appsfreedom</loc>
+		<lastmod>2013-10-03T21:43:34+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2174: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/appsfreedom-to-demonstrate-its-mobile-crm-app-for-sap-at-crm-2013-event</loc>
+		<lastmod>2013-10-03T21:43:14+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2191: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/executive-leadership-team-expansion</loc>
+		<lastmod>2013-10-03T21:42:50+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2453: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/appsfreedom-version-30</loc>
+		<lastmod>2013-10-03T21:42:19+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2235: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/appsfreedom-featured-in-sapinsider</loc>
+		<lastmod>2013-10-03T21:41:57+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2226: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/series-a-funding-grayhawk-capital</loc>
+		<lastmod>2013-10-03T21:41:42+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2397: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/global-engineering-software-firm-deploys-appsfreedom</loc>
+		<lastmod>2013-10-03T21:41:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2566: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/aca-innovation-challenge-finalist</loc>
+		<lastmod>2013-10-03T21:40:48+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2557: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/dole-packaged-foods-deploys-appsfreedoms-mobile-cloud-app-for-procurement</loc>
+		<lastmod>2013-10-03T21:40:32+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2599: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/2013-innovation-challenge-winner</loc>
+		<lastmod>2013-10-03T21:40:13+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2804: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/new-board-of-directors</loc>
+		<lastmod>2013-10-03T21:39:43+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2994: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/appsfreedom-named-to-cio-review-magazines-2013-list-of-20-most-promising-enterprise-mobility-companies</loc>
+		<lastmod>2013-10-03T21:39:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3056: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/stevie-award</loc>
+		<lastmod>2013-10-03T21:38:51+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3152: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/appsfreedom-named-a-finalist-for-best-new-product-technology-by-the-2013-golden-bridge-awards</loc>
+		<lastmod>2013-10-03T21:38:08+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3173: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/appsfreedom-named-a-2013-onmobile-company-to-watch</loc>
+		<lastmod>2013-10-03T21:37:46+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 3187: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/appsfreedom-founder-ceo-interviewed-on-pbs-az-horizon-program</loc>
+		<lastmod>2013-09-28T00:51:25+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/apps/operationsfreedom</loc>
+		<lastmod>2013-09-26T18:02:21+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/appsfreedom-groundswell-awards</loc>
+		<lastmod>2013-08-30T18:52:57+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/news-and-events/appsfreedom-in-the-news</loc>
+		<lastmod>2013-08-21T16:22:16+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/about/partners</loc>
+		<lastmod>2013-08-21T08:51:06+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/about/board-of-directors-advisors</loc>
+		<lastmod>2013-08-12T20:58:21+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/website-terms-of-use</loc>
+		<lastmod>2013-08-07T21:41:17+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/copyright-policy</loc>
+		<lastmod>2013-08-07T21:37:35+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/privacy-policy</loc>
+		<lastmod>2013-08-07T21:36:21+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/trademark-guidelines</loc>
+		<lastmod>2013-08-06T23:20:19+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/contact</loc>
+		<lastmod>2013-07-26T19:29:50+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/about/var-program</loc>
+		<lastmod>2013-07-26T19:28:11+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 2833: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/precious-metals-and-mineral-mining</loc>
+		<lastmod>2013-07-26T19:15:48+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2727: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/global-engineering-infrastructure-software</loc>
+		<lastmod>2013-06-25T15:55:35+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 531: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/success-story-industrial-defense-and-workforce-outsourcing</loc>
+		<lastmod>2013-06-24T23:44:57+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 535: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/success-story-wine-and-spirits</loc>
+		<lastmod>2013-06-24T23:44:34+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2725: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/global-packaged-foods-industry</loc>
+		<lastmod>2013-06-24T23:33:21+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2617: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/learn-how-to-leverage-the-enterprise-mobile-cloud-for-new-productivity-and-competitive-advantage</loc>
+		<lastmod>2013-06-18T19:55:55+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/resources/free-mobile-sap-white-paper</loc>
+		<lastmod>2013-05-21T19:24:01+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/disclaimer</loc>
+		<lastmod>2013-05-21T17:42:19+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/appsfreedom-newsletter-fueling-competitive-advantage-with-the-enterprise-mobile-cloud-featuring-research-by-gartner-thank-you</loc>
+		<lastmod>2013-05-15T06:26:51+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/gartner-research-enterprise-mobile-cloud</loc>
+		<lastmod>2013-05-02T15:52:15+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/careers</loc>
+		<lastmod>2013-05-02T06:11:56+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/solutions</loc>
+		<lastmod>2013-05-02T05:50:08+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/sapphire-2013-private-dinner-invite</loc>
+		<lastmod>2013-05-02T04:03:54+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/campaign-monitor-test</loc>
+		<lastmod>2013-04-23T15:58:48+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/sapinsider2013</loc>
+		<lastmod>2013-04-23T01:42:09+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/how-to-generate-maximum-value-from-enterprise-mobility-in-the-cloud</loc>
+		<lastmod>2012-08-31T00:16:05+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/thank-you-2</loc>
+		<lastmod>2012-08-24T00:25:54+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/about/events/free-enterprise-mobility-webinar</loc>
+		<lastmod>2012-08-23T23:11:28+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 1864: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/mobility-and-top-line-revenue</loc>
+		<lastmod>2012-05-14T13:45:56+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1819: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/gain-a-competitive-edge</loc>
+		<lastmod>2012-05-09T17:52:01+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1763: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/improve-customer-satisfaction</loc>
+		<lastmod>2012-05-03T18:20:56+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1735: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/faster-better-business-decisions</loc>
+		<lastmod>2012-05-01T18:30:49+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1597: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/6-degrees-productivity</loc>
+		<lastmod>2012-04-26T21:57:19+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1397: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/saps-acquisition-of-syclo</loc>
+		<lastmod>2012-04-24T22:28:19+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/blog</loc>
+		<lastmod>2012-04-22T01:18:37+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 1523: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/accelerate-your-sales-cycle-with-mobility</loc>
+		<lastmod>2012-04-17T20:07:19+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/booking</loc>
+		<lastmod>2012-04-16T22:46:01+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/schedule-an-appointment</loc>
+		<lastmod>2012-04-16T17:55:36+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/about/blog</loc>
+		<lastmod>2012-04-15T01:44:51+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 1221: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/free-webinar-5-lessons-for-success</loc>
+		<lastmod>2012-03-28T21:16:15+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/sample-page</loc>
+		<lastmod>2012-03-15T05:55:17+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 1349: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/enterprise-mobility-provider-seal-innotech-changes-company-name-to-appsfreedom</loc>
+		<lastmod>2012-03-14T06:18:13+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1331: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/apples-new-ipad-in-the-enterprise-laptop-replacement-gets-closer</loc>
+		<lastmod>2012-03-08T18:02:28+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/take-a-tour</loc>
+		<lastmod>2012-02-27T20:55:39+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 742: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/news-brief-expanding-business-value-of-sap%c2%ae-solutions-with-micro-applications-from-seal-innotech</loc>
+		<lastmod>2012-01-24T17:42:41+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 515: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/invest-southwest-taps-12-companies-for-new-funding</loc>
+		<lastmod>2012-01-24T17:40:24+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 193: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/seal-innotech-named-a-top-innovator</loc>
+		<lastmod>2012-01-24T17:39:38+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 704: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/the-macro-effect-of-micro-apps-on-enterprise-mobility</loc>
+		<lastmod>2012-01-24T17:32:21+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 662: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/day-zimmermann-signs-new-agreement-for-seal-micro-apps-on-apple%c2%ae-ipad%e2%84%a2</loc>
+		<lastmod>2012-01-24T17:30:28+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 840: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/seal-innotech-signs-pilots</loc>
+		<lastmod>2012-01-24T17:26:34+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 923: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/seal-innotech-announces-appsfreedom-enterprise-mobility-suite-available-for-cisco-cius-tablet</loc>
+		<lastmod>2012-01-24T17:24:35+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 656: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/seal-innotech-launches-appsfreedom-2-0-enterprise-mobility-suite-at-sapphire-2011</loc>
+		<lastmod>2012-01-24T17:23:43+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 855: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/enterprise-sales-executive-phoenix-az</loc>
+		<lastmod>2012-01-24T17:20:50+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 979: Comments: 0 of 0 = 0 points -->
+	<url>
+		<loc>http://www.appsfreedom.com/director-of-engineering-phoenix-az</loc>
+		<lastmod>2012-01-24T17:17:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/thank-you</loc>
+		<lastmod>2012-01-24T17:11:20+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/about/partners/cisco</loc>
+		<lastmod>2012-01-24T16:36:38+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://www.appsfreedom.com/restricted-page</loc>
+		<lastmod>2011-06-29T20:26:32+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: End Postings -->
+<!-- Debug: Start Custom Pages -->
+<!-- Debug: End Custom Pages -->
+<!-- Debug: Start additional URLs -->
+<!-- Debug: End additional URLs -->
+</urlset>

@@ -1,0 +1,13 @@
+/*************************** General Styling ***************************/
+
+/* Form Styling */
+input[type="submit"],
+input[type="reset"] {
+padding: 6px 10px;
+}
+
+/*************************** Shortcodes: Accordion ***************************/
+
+.panel-content {
+overflow: hidden;
+}
