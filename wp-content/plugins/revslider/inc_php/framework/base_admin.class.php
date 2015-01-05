@@ -210,7 +210,6 @@
 				$urlJqueryUI = $prefix."ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js";
 				self::addScriptAbsoluteUrl($urlJqueryUI,"jquery-ui");
 				
-				//self::addStyle("jquery-ui-1.10.3.custom.min","jui-smoothness","css/jui/new");
 				wp_enqueue_style('jui-smoothness', esc_url_raw($prefix.'ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/themes/base/jquery-ui.css'), array(), null);
 				
 				if(function_exists("wp_enqueue_media"))
@@ -220,7 +219,6 @@
 				
 				$urlJqueryUI = $prefix."ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js";
 				self::addScriptAbsoluteUrl($urlJqueryUI,"jquery-ui");
-				//self::addStyle("jquery-ui-1.8.18.custom","jui-smoothness","css/jui/old");
 				wp_enqueue_style('jui-smoothness', esc_url_raw($prefix.'ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/themes/base/jquery-ui.css'), array(), null);
 				
 			}
@@ -446,7 +444,7 @@
 		
 		public static function onActivateHook(){
 			
-			$options = array('use_hammer_js' => 'on');
+			$options = array();
 			
 			$options = apply_filters('revslider_mod_activation_option', $options);
 			

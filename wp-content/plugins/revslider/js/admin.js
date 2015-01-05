@@ -788,13 +788,18 @@ var UniteAdminRev = new function(){
 		jQuery("#input_video_nextslide").prop("checked","");
 		jQuery("#input_video_force_rewind").prop("checked","");
 		jQuery("#input_video_fullwidth").prop("checked","");
-		jQuery("#input_video_loop").prop("checked","");
 		jQuery("#input_video_control").prop("checked","");
 		jQuery("#input_video_mute").prop("checked","");
+		jQuery("#input_disable_on_mobile").prop("checked","");
 		jQuery("#input_video_cover").prop("checked","");
 		jQuery("#input_video_dotted_overlay option[value='none']").attr("selected",true);
 		jQuery("#input_video_ratio option[value='16:9']").attr("selected",true);
+		jQuery('#input_video_preload option[value="auto"]').attr("selected",true);
+		jQuery('#input_video_speed option[value="1"]').attr("selected",true);
+		jQuery('#input_video_loop option[value="none"]').attr("selected",true);
 		jQuery("#input_video_preview").val("");
+		jQuery("#input_use_poster_on_mobile").prop("checked","");
+		
 		
 		jQuery("#youtube_id").val("");
 		jQuery("#vimeo_id").val("");
@@ -875,6 +880,12 @@ var UniteAdminRev = new function(){
 			jQuery("#showautoplayfirsttime").hide();
 		}
 		
+		if(data.use_poster_on_mobile && data.use_poster_on_mobile == true){
+			jQuery("#input_use_poster_on_mobile").prop("checked","checked");
+		}else{
+			jQuery("#input_use_poster_on_mobile").prop("checked","");
+		}
+		
 		if(data.autoplayonlyfirsttime && data.autoplayonlyfirsttime == true)
 			jQuery("#input_video_autoplay_first_time").prop("checked","checked");
 		else
@@ -894,12 +905,7 @@ var UniteAdminRev = new function(){
 			jQuery("#input_video_fullwidth").prop("checked","checked");
 		else
 			jQuery("#input_video_fullwidth").prop("checked","");
-			
-		if(data.videoloop && data.videoloop == true)
-			jQuery("#input_video_loop").prop("checked","checked");
-		else
-			jQuery("#input_video_loop").prop("checked","");
-			
+		
 		if(data.controls && data.controls == true)
 			jQuery("#input_video_control").prop("checked","checked");
 		else
@@ -909,11 +915,30 @@ var UniteAdminRev = new function(){
 			jQuery("#input_video_mute").prop("checked","checked");
 		else
 			jQuery("#input_video_mute").prop("checked","");
+		
+		if(data.disable_on_mobile && data.disable_on_mobile == true)
+			jQuery("#input_disable_on_mobile").prop("checked","checked");
+		else
+			jQuery("#input_disable_on_mobile").prop("checked","");
 			
 		if(data.cover && data.cover == true)
 			jQuery("#input_video_cover").prop("checked","checked");
 		else
 			jQuery("#input_video_cover").prop("checked","");
+		
+		if(data.preload){
+			jQuery("#input_video_preload option").each(function(){
+				if(jQuery(this).val() == data.preload)
+					jQuery(this).attr('selected', true);
+			});
+		}
+		
+		if(data.videospeed){
+			jQuery("#input_video_speed option").each(function(){
+				if(jQuery(this).val() == data.videospeed)
+					jQuery(this).attr('selected', true);
+			});
+		}
 		
 		if(data.dotted){
 			jQuery("#input_video_dotted_overlay option").each(function(){
@@ -926,6 +951,17 @@ var UniteAdminRev = new function(){
 				if(jQuery(this).val() == data.ratio)
 					jQuery(this).attr('selected', true);
 			});
+		}
+		
+		if(data.videoloop){
+			if(data.videoloop == true){
+				jQuery('#input_video_loop option[value="loop"]').attr("selected",true);
+			}else{
+				jQuery("#input_video_loop option").each(function(){
+					if(jQuery(this).val() == data.videoloop)
+						jQuery(this).attr('selected', true);
+				});
+			}
 		}
 		
 		//change button text:
@@ -952,16 +988,20 @@ var UniteAdminRev = new function(){
 		obj.args = jQuery("#input_video_arguments").val();
 		obj.previewimage = jQuery("#input_video_preview").val();
 		obj.autoplay = jQuery("#input_video_autoplay").is(":checked");
+		obj.use_poster_on_mobile = jQuery("#input_use_poster_on_mobile").is(":checked");
 		obj.autoplayonlyfirsttime = jQuery("#input_video_autoplay_first_time").is(":checked");
 		obj.nextslide = jQuery("#input_video_nextslide").is(":checked");
 		obj.forcerewind = jQuery("#input_video_force_rewind").is(":checked");
 		obj.fullwidth = jQuery("#input_video_fullwidth").is(":checked");
-		obj.videoloop = jQuery("#input_video_loop").is(":checked");
 		obj.controls = jQuery("#input_video_control").is(":checked");
 		obj.mute = jQuery("#input_video_mute").is(":checked");
+		obj.disable_on_mobile = jQuery("#input_disable_on_mobile").is(":checked");
 		obj.cover = jQuery("#input_video_cover").is(":checked");
 		obj.dotted = jQuery("#input_video_dotted_overlay option:selected").val();
+		obj.preload = jQuery("#input_video_preload option:selected").val();
+		obj.videospeed = jQuery("#input_video_speed option:selected").val();
 		obj.ratio = jQuery("#input_video_ratio option:selected").val();
+		obj.videoloop = jQuery("#input_video_loop option:selected").val();
 		return(obj);
 	}
 	
@@ -978,7 +1018,10 @@ var UniteAdminRev = new function(){
 		jQuery("#video_radio_vimeo").click(function(){
 			jQuery("#video_block_youtube").hide();
 			jQuery("#video_block_html5").hide();
+			jQuery("#rev-html5-options").hide();
+			jQuery("#rev-youtube-options").hide();
 			jQuery("#video_hidden_controls").hide();
+			jQuery("#rev-video-loop-wrap").hide();
 			//jQuery("#video_content").show();
 			jQuery("#video_block_vimeo").show();
 			jQuery("#preview-image-video-wrap").show();
@@ -989,7 +1032,10 @@ var UniteAdminRev = new function(){
 		jQuery("#video_radio_youtube").click(function(){
 			jQuery("#video_block_vimeo").hide();
 			jQuery("#video_block_html5").hide();			
+			jQuery("#rev-html5-options").hide();			
+			jQuery("#rev-youtube-options").show();			
 			jQuery("#video_hidden_controls").hide();
+			jQuery("#rev-video-loop-wrap").hide();
 			//jQuery("#video_content").show();
 			jQuery("#video_block_youtube").show();
 			jQuery("#preview-image-video-wrap").show();
@@ -1001,8 +1047,11 @@ var UniteAdminRev = new function(){
 			jQuery("#video_block_vimeo").hide();
 			jQuery("#video_block_youtube").hide();
 			jQuery("#video_block_html5").show();
+			jQuery("#rev-youtube-options").hide();
+			jQuery("#rev-html5-options").show();
 			jQuery("#video_content").hide();
 			jQuery("#video_hidden_controls").show();
+			jQuery("#rev-video-loop-wrap").show();
 			jQuery("#preview-image-video-wrap").hide();
 			jQuery("#video-dialog-wrap").addClass("html5select");
 			jQuery("#fullscreenvideofun").show();	
@@ -1100,7 +1149,7 @@ var UniteAdminRev = new function(){
 			vimeoID = jQuery.trim(vimeoID);
 			vimeoID = getVimeoIDFromUrl(vimeoID);
 			
-			var urlAPI = 'http://www.vimeo.com/api/v2/video/' + vimeoID + '.json?callback=UniteAdminRev.onVimeoCallback'; 
+			var urlAPI = '//www.vimeo.com/api/v2/video/' + vimeoID + '.json?callback=UniteAdminRev.onVimeoCallback'; 
 			jQuery.getScript(urlAPI);
 		});
 		

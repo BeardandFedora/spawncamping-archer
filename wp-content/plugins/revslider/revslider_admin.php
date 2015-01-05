@@ -84,14 +84,18 @@
 
 				if(isset($_GET['checkforupdates']) && $_GET['checkforupdates'] == 'true')
 					$upgrade->_retrieve_version_info(true);
-
+				
 				if(get_option('revslider-valid', 'false') === 'true') {
 					$upgrade->add_update_checks();
 				}
 			}
 
 			self::addAction('admin_enqueue_scripts', 'enqueue_styles');
-
+			
+			
+			add_action('wp_ajax_revslider_ajax_call_front', array('RevSliderAdmin', 'onFrontAjaxAction'));
+			add_action('wp_ajax_nopriv_revslider_ajax_call_front', array('RevSliderAdmin', 'onFrontAjaxAction')); //for not logged in users
+			
 		}
 
 		public static function enqueue_styles(){
@@ -219,6 +223,15 @@
 		 * common scripts even if the plugin not load, use this function only if no choise.
 		 */
 		public static function onAddScripts(){
+			global $wp_version;
+			
+			$style_pre = '';
+			$style_post = '';
+			if($wp_version < 3.7){
+				$style_pre = '<style type="text/css">';
+				$style_post = '</style>';
+			}
+			
 			self::addStyle("edit_layers","edit_layers");
 
 			//add google font
@@ -241,16 +254,11 @@
 			$styles = $db->fetch(GlobalsRevSlider::$table_css);
 			$styles = UniteCssParserRev::parseDbArrayToCss($styles, "\n");
 			$styles = UniteCssParserRev::compress_css($styles);
-			wp_add_inline_style( 'rs-plugin-settings', $styles );
-
-			// KRISZTIAN MODIFICATION FOR INNERLAYERS
-			$stylesinnerlayers = str_replace('.tp-caption', '',$styles);
-			wp_add_inline_style( 'rs-plugin-settings', $stylesinnerlayers );
-			// END MODIFICATION
+			wp_add_inline_style( 'rs-plugin-settings', $style_pre.$styles.$style_post );
 
 			$custom_css = RevOperations::getStaticCss();
 			$custom_css = UniteCssParserRev::compress_css($custom_css);
-			wp_add_inline_style( 'rs-plugin-settings', $custom_css );
+			wp_add_inline_style( 'rs-plugin-settings', $style_pre.$custom_css.$style_post );
 			//self::addStyle("static-captions","rs-plugin-static","rs-plugin/css");
 		}
 
@@ -333,7 +341,7 @@
 							  title tinytext NOT NULL,
 							  alias tinytext,
 							  params text NOT NULL,
-							  PRIMARY KEY (id)
+							  PRIMARY KEY  (id)
 							)$charset_collate;";
 				break;
 				case GlobalsRevSlider::TABLE_SLIDES_NAME:
@@ -343,7 +351,7 @@
 								  slide_order int not NULL,
 								  params text NOT NULL,
 								  layers text NOT NULL,
-								  PRIMARY KEY (id)
+								  PRIMARY KEY  (id)
 								)$charset_collate;";
 				break;
 				case GlobalsRevSlider::TABLE_STATIC_SLIDES_NAME:
@@ -352,7 +360,7 @@
 								  slider_id int(9) NOT NULL,
 								  params text NOT NULL,
 								  layers text NOT NULL,
-								  PRIMARY KEY (id)
+								  PRIMARY KEY  (id)
 								)$charset_collate;";
 				break;
 				case GlobalsRevSlider::TABLE_SETTINGS_NAME:
@@ -360,7 +368,7 @@
 								  id int(9) NOT NULL AUTO_INCREMENT,
 								  general TEXT NOT NULL,
 								  params TEXT NOT NULL,
-								  PRIMARY KEY (id)
+								  PRIMARY KEY  (id)
 								)$charset_collate;";
 				break;
 				case GlobalsRevSlider::TABLE_CSS_NAME:
@@ -370,7 +378,7 @@
 								  settings TEXT,
 								  hover TEXT,
 								  params TEXT NOT NULL,
-								  PRIMARY KEY (id)
+								  PRIMARY KEY  (id)
 								)$charset_collate;";
 					$parseCssToDb = true;
 				break;
@@ -379,7 +387,7 @@
 								  id int(9) NOT NULL AUTO_INCREMENT,
 								  handle TEXT NOT NULL,
 								  params TEXT NOT NULL,
-								  PRIMARY KEY (id)
+								  PRIMARY KEY  (id)
 								)$charset_collate;";
 				break;
 
@@ -595,7 +603,7 @@
 					break;
 					case "update_static_slide":
 						$slide->updateStaticSlideFromData($data);
-						self::ajaxResponseSuccess(__("Static Layers updated",REVSLIDER_TEXTDOMAIN));
+						self::ajaxResponseSuccess(__("Static Global Layers updated",REVSLIDER_TEXTDOMAIN));
 					break;
 					case "delete_slide":
 						$isPost = $slide->deleteSlideFromData($data);
@@ -768,6 +776,86 @@
 			self::ajaxResponseError("No response output on <b> $action </b> action. please check with the developer.");
 			exit();
 		}
+		
+		/**
+		 * Set the option to add a delay to the revslider javascript output
+		 */
+		public static function rev_set_js_delay($do_delay){
+			return '300';
+		}
+		
+		/**
+		 * onAjax action handler
+		 */
+		public static function onFrontAjaxAction(){
+			$db = new UniteDBRev();
+			$slider = new RevSlider();
+			$slide = new RevSlide();
+			$operations = new RevOperations();
+			
+			$token = self::getPostVar("token", false);
+			
+			//verify the token
+			$isVerified = wp_verify_nonce($token, 'RevSlider_Front');
+			
+			$error = false;
+			if($isVerified){
+				$data = self::getPostVar('data', false);
+				switch(self::getPostVar('client_action', false)){
+					case 'get_slider_html':
+						$id = intval(self::getPostVar('id', 0));
+						if($id > 0){
+							$html = '';
+							add_filter('revslider_add_js_delay', array('RevSliderAdmin', 'rev_set_js_delay'));
+							ob_start();
+							$slider_class = RevSliderOutput::putSlider($id);
+							$html = ob_get_contents();
+							
+							//add styling
+							$custom_css = RevOperations::getStaticCss();
+							$custom_css = UniteCssParserRev::compress_css($custom_css);
+							$styles = $db->fetch(GlobalsRevSlider::$table_css);
+							$styles = UniteCssParserRev::parseDbArrayToCss($styles, "\n");
+							$styles = UniteCssParserRev::compress_css($styles);
+							
+							$html .= '<style type="text/css">'.$custom_css.'</style>';
+							$html .= '<style type="text/css">'.$styles.'</style>';
+							
+							ob_clean();
+							ob_end_clean();
+							
+							$result = (!empty($slider_class) && $html !== '') ? true : false;
+							
+							if(!$result){
+								$error = __('Slider not found', REVSLIDER_TEXTDOMAIN);
+							}else{
+								
+								if($html !== false){
+									self::ajaxResponseData($html);
+								}else{
+									$error = __('Slider not found', REVSLIDER_TEXTDOMAIN);
+								}
+							}
+						}else{
+							$error = __('No Data Received', REVSLIDER_TEXTDOMAIN);
+						}
+					break;
+				}
+				
+			}else{
+				$error = true;
+			}
+			
+			if($error !== false){
+				$showError = __('Loading Error', REVSLIDER_TEXTDOMAIN);
+				if($error !== true)
+					$showError = __('Loading Error: ', REVSLIDER_TEXTDOMAIN).$error;
+				
+				self::ajaxResponseError($showError, false);
+			}
+			exit();
+		}
+		
 
 	}
 

@@ -6,8 +6,8 @@ wp-config.php
 startup.sh
 .DS_Store
 appsfreedom-production.tar.gz
-af-baks
+#af-baks
 #*.bak
 #*bak
 *.tar.gz
-af-bak/appsfreedom/vis
+af-bak/appsfreedom/*

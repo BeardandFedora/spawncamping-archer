@@ -324,7 +324,21 @@ var RevSliderAdmin = new function(){
 				jQuery('select[name="navigation_style"] option:selected').change();
 			});
 			
-			
+		
+			/**
+			 * Set bullet type and navigation arrows to none if loop_slide is set to off
+			 */
+			jQuery('body').on('click', 'input[name="loop_slide"]', function(){
+
+				if(jQuery(this).val() == 'noloop'){
+					jQuery('#navigaion_type option[value="none"]').attr('selected', true);
+					jQuery('#navigation_arrows option[value="none"]').attr('selected', true);
+					jQuery('#navigaion_type').change();
+					jQuery('#navigation_arrows').change();
+					
+					UniteAdminRev.showInfo({type: 'info', hideon: '', event: '', content: 'Navigation Bullets and Arrows are now set to none.', hidedelay: 3});
+				}
+			});
 		}
 		
 		
@@ -379,7 +393,7 @@ var RevSliderAdmin = new function(){
 															'<div class="bounce3"></div>'+
 														 '</div>');															 															 
 				spin.find('.tp-demo').addClass("spinner"+sel.val());	
-				if (sel.val()==0 || sel.val()==5) {
+				if (sel.val()=='-1' || sel.val()==0 || sel.val()==5) {
 					//jQuery('#spinner_color').val("#ffffff");
 					jQuery('#spinner_color_row').css({display:"none"});
 				} else {
@@ -388,9 +402,6 @@ var RevSliderAdmin = new function(){
 				spinnerColorChange();
 				
 		};
-		
-
-		
 		
 		/**
 		 * init "slider->add" view.

@@ -12,12 +12,14 @@ $tableSlides = $wpdb->prefix . GlobalsRevSlider::TABLE_SLIDES_NAME;
 $tableSettings = $wpdb->prefix . GlobalsRevSlider::TABLE_SETTINGS_NAME;
 $tableCss = $wpdb->prefix . GlobalsRevSlider::TABLE_CSS_NAME;
 $tableAnims = $wpdb->prefix . GlobalsRevSlider::TABLE_LAYER_ANIMS_NAME;
+$tableStaticSlides = $wpdb->prefix . GlobalsRevSlider::TABLE_STATIC_SLIDES_NAME;
 
 $wpdb->query( "DROP TABLE $tableSliders" );
 $wpdb->query( "DROP TABLE $tableSlides" );
 $wpdb->query( "DROP TABLE $tableSettings" );
 $wpdb->query( "DROP TABLE $tableCss" );
 $wpdb->query( "DROP TABLE $tableAnims" );
+$wpdb->query( "DROP TABLE $tableStaticSlides" );
 
 delete_option('revslider-latest-version');
 delete_option('revslider-update-check-short');

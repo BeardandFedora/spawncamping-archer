@@ -50,6 +50,10 @@
 							<td class="api-cell1"><?php _e("Redraw Slider",REVSLIDER_TEXTDOMAIN)?>:</td>
 							<td class="api-cell2"><input type="text" readonly  class="api-input" value="<?php echo $api?>.revredraw();"></td>
 						</tr>
+						<tr>
+							<td class="api-cell1"><?php _e("Kill and Remove Slider",REVSLIDER_TEXTDOMAIN)?>:</td>
+							<td class="api-cell2"><input type="text" readonly  class="api-input" value="<?php echo $api?>.revkill();"></td>
+						</tr>
 						
 					</table>
 					<div class="divide20"></div>
@@ -98,6 +102,10 @@
 
 <?php echo $api?>.bind("revolution.slide.onafterswap",function (e) {
 	//alert("after swap");
+});
+
+<?php echo $api?>.bind("revolution.slide.slideatend",function (e) {
+	//alert("slide at end");
 });
 			
 			

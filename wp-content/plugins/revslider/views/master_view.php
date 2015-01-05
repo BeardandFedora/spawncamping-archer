@@ -12,7 +12,7 @@
 <script type="text/javascript">
 	var g_revNonce = "<?php echo $nonce?>";
 	var g_uniteDirPlagin = "<?php echo self::$dir_plugin?>";
-	var g_urlContent = "<?php echo content_url()."/";?>";
+	var g_urlContent = "<?php echo str_replace(array("\n", "\r", chr(10), chr(13)), array(''), content_url())."/";?>";
 	var g_urlAjaxShowImage = "<?php echo UniteBaseClassRev::$url_ajax_showimage?>";
 	var g_urlAjaxActions = "<?php echo UniteBaseClassRev::$url_ajax_actions?>";
 	var g_settingsObj = {};

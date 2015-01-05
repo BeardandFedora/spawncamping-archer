@@ -1,5 +1,18 @@
 # Redux Framework Changelog
 
+## 3.3.9.4
+* Added:    Customizer now supports PANEL! Yay 4.0.
+
+## 3.3.9.3
+* Fixed:    #1789 - Customizer now properly working again with WP 4.0. Odd bug.
+* Modified: README.md updates as per @cmwwebfx suggestions.
+
+## 3.3.9.2
+* Fixed:    #1782 - Fixed some extra themecheck and customizer issues.
+
+## 3.3.9.1
+* Fixed:    #1782 - Media field not showing files after upload?  Hopefully this fixes it.
+
 ## 3.3.9
 * Fixed:    #1775 - Call to undefined function is_customize_preview() in pre WP 4.0.
 * Fixed:    Issue where in some cases tracking still occuring after opt-out.

@@ -206,6 +206,7 @@
 
 				$arrTransition = array(
 					"notselectable1"=>"RANDOM TRANSITIONS",
+					"random-selected"=>"Random of Selected",
 					"random-static"=>"Random Flat",
 					"random-premium"=>"Random Premium",
 					"random"=>"Random Flat and Premium",
@@ -409,7 +410,7 @@
 			if(trim($rawID) != '') {
 				$db = new UniteDBRev();
 				$id = str_replace(array('customin-', 'customout'), array('', ''), $rawID);
-				$db->delete(GlobalsRevSlider::$table_layer_anims, "id = '".mysql_real_escape_string($id)."'");
+				$db->delete(GlobalsRevSlider::$table_layer_anims, "id = '".mysqli_real_escape_string($id)."'");
 			}
 
 			$arrAnims['customin'] = RevOperations::getCustomAnimations();
@@ -543,7 +544,8 @@
 			//parse css captions file
 			$parser = new UniteCssParserRev();
 			$parser->initContent($contentCSS);
-			$arrCaptionClasses = $parser->getArrClasses();
+			$arrCaptionClasses = $parser->getArrClasses('','',true);
+			
 			return($arrCaptionClasses);
 		}
 
@@ -999,11 +1001,8 @@
 						$styles = $db->fetch(GlobalsRevSlider::$table_css);
 						$styles = UniteCssParserRev::parseDbArrayToCss($styles, "\n");
 						$styles = UniteCssParserRev::compress_css($styles);
-						// KRISZTIAN MODIFICATION
-						$stylesinnerlayers = str_replace('.tp-caption', '',$styles);
-						// KRISZTIAN MODIFICATION ENDS
 
-						echo '<style type="text/css">'.$styles.$stylesinnerlayers.'</style>';
+						echo '<style type="text/css">'.$styles.'</style>'; //.$stylesinnerlayers
 
 						$http = (is_ssl()) ? 'https' : 'http';
 
