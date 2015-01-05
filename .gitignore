@@ -11,3 +11,4 @@ appsfreedom-production.tar.gz
 #*bak
 *.tar.gz
 af-bak/appsfreedom/*
+videos/*
