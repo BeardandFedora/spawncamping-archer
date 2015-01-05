@@ -19,9 +19,9 @@
 
 ---
 
-[LICENSE](LICENSE)
+[LICENSE](http://choosealicense.com/licenses/no-license/)
 
-This software is a custom built version of [StacheStack](https://github.com/BeardandFedora/StacheStack), a free an open software, and was originally intended for a specific client use. However, the client has refused payment for this software, and it is now fully copyrighted and not authorized for use, other than to those listed below in the copyright ownership notice. 
+This software is a custom built version of [StacheStack](https://github.com/BeardandFedora/StacheStack), a free an open software, and was originally intended for a specific client use. However, the intended client has refused payment for this software, and it is now fully copyrighted and not authorized for use, other than to those listed below in the copyright ownership notice. 
 
 ---
 
