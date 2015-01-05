@@ -10,5 +10,6 @@ appsfreedom-production.tar.gz
 #*.bak
 #*bak
 *.tar.gz
-af-bak/appsfreedom/*
+af-bak/__MACOSX
+af-bak/appsfreedom
 videos/*
