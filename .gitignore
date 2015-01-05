@@ -1,4 +1,4 @@
-# do not for ny reason let these files be committed
+# do not for any reason let these files be committed
 .box-settings
 wp-config.php
 .codio
