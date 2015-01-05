@@ -7,7 +7,7 @@
 * [User Guide](User-Guide)
 * [Developer Guide](https://beardandfedora.github.io/StacheStack)
 
-## LeanStack is built on StacheStack, which is built on:
+## LeanStack is built on [StacheStack](https://github.com/BeardandFedora/StacheStack), which is built on:
 
 * Roots - https://github.com/roots/roots
 * BedRock - https://github.com/roots/bedrock
@@ -21,7 +21,7 @@
 
 [LICENSE](LICENSE)
 
-This software is a custom built version of StacheStack, a free an open software, and was originally intended for a specific client use. However, the client has refused payment for this software, and it is now fully copyrighted and not authorized for use, other than to those listed below in the copyright ownership notice. 
+This software is a custom built version of [StacheStack](https://github.com/BeardandFedora/StacheStack), a free an open software, and was originally intended for a specific client use. However, the client has refused payment for this software, and it is now fully copyrighted and not authorized for use, other than to those listed below in the copyright ownership notice. 
 
 ---
 
