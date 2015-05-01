@@ -10,9 +10,12 @@ appsfreedom-production.tar.gz
 #*.bak
 #*bak
 *.tar.gz
+*.jar
 af-bak/__MACOSX
 af-bak/appsfreedom
 af-bak/appsfreedom/vis-bak.tar.gz
 af-bak/appsfreedom/wp-bak.tar.gz
 af-bak/appsfreedom/old_www_backup-bak.tar.gz
 videos/*
+# To avoid DMCS takedowns in github, don't push these to github
+*js_composer*
